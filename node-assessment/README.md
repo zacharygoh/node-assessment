@@ -11,17 +11,16 @@ Space monorepo microservices repo that managed by Yarn Workspace & Lerna
 <br />
 
 ## Tools
-**Lerna** as monorepo management tools
-**Yarn** as default package manager, utilize yarn workspace to maintain multiple workspace
-**VsCode** as default code editor as customized launch.json to utilize VsCode debug
-**Nodemon** as hot-reload module
-**ExpressJS** as default http web server
-**Winston + Morgan** as logging mechanism tools
-**Knex** as default query builder
-**Objection** as default ORM
-**routing-controller** used to manage express messy routing
+1. **Lerna** as monorepo management tools
+2. **Yarn** as default package manager, utilize yarn workspace to maintain multiple workspace
+3. **VsCode** as default code editor as customized launch.json to utilize VsCode debug
+4. **Nodemon** as hot-reload module
+5. **ExpressJS** as default http web server
+6. **Winston + Morgan** as logging mechanism tools
+7. **Knex** as default query builder
+8. **Objection** as default ORM
+9. **routing-controller** used to manage express messy routing
 ---
-
 <br>
 
 ## Pre-requisite
