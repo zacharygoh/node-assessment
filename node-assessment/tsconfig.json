@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@space/*": ["packages/*/src"]
+    },
+    "types": ["jest", "node"]
+  },
+  "exclude": [
+    "node_modules",
+    "**/*test.ts"
+  ]
+}

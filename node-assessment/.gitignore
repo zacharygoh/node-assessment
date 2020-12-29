@@ -1,0 +1,15 @@
+#MacOSX
+.DS_Store
+
+#test
+.jest-*
+
+#application related
+**/logs
+**/dist
+
+#nodeJS 
+node_modules
+
+#env
+.env

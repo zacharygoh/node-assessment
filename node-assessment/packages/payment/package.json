@@ -1,0 +1,25 @@
+{
+  "name": "@space/payment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon --config ../../nodemon.json src/index.ts",
+    "build": "yarn clean && tsc -p tsconfig.build.json",
+    "clean": "rm -rf ./dist ./logs",
+    "start": "yarn build && cross-env NODE_ENV=production node ./dist/index.js",
+    "knex": "knex --knexfile ./src/infrastructure/db/knex.ts",
+    "test": "cross-env NODE_ENV=testing jest --config ../../jest.config.js ./src",
+    "migrate": "npm run knex migrate:latest",
+    "rollback": "npm run knex migrate:rollback"
+  },
+  "author": "Zachary",
+  "license": "MIT",
+  "dependencies": {
+    "@space/asgard": "^1.5.0"
+  }
+}

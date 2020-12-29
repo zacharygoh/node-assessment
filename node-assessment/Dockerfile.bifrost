@@ -1,0 +1,23 @@
+FROM node:latest
+
+WORKDIR /usr/src/app
+COPY package.json .
+RUN cd $(npm root -g)/npm
+RUN yarn global add lerna --loglevel notice
+
+# Copy packages
+COPY packages/asgard ./packages/asgard
+COPY packages/payment ./packages/payment
+COPY packages/order ./packages/order
+
+# Copy configurations
+COPY lerna.json .
+COPY tsconfig.build.json .
+COPY tsconfig.json .
+
+# Bootstrap application with correct dependencies 
+RUN lerna bootstrap
+
+RUN yarn build
+EXPOSE 8085
+CMD ["yarn", "start"]

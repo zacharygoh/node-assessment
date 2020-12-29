@@ -1,0 +1,23 @@
+NODE_ENV=development
+PORT=8085
+
+DEV_DB_HOST=127.0.0.1
+DEV_DB_PORT=5432
+DEV_DB_NAME=node_assessment_db
+DEV_DB_USER=postgres
+DEV_DB_PASSWORD=123
+
+TEST_DB_HOST=127.0.0.1
+TEST_DB_PORT=5432
+TEST_DB_NAME=node_assessment_db
+TEST_DB_USER=postgres
+TEST_DB_PASSWORD=123
+
+PROD_DB_HOST=127.0.0.1
+PROD_DB_PORT=5432
+PROD_DB_NAME=node_assessment_db
+PROD_DB_USER=postgres
+PROD_DB_PASSWORD=123
+
+https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+Clean architecuture biased, but not entirely adapt - (Uncle Bob)
